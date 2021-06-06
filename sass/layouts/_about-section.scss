@@ -1,0 +1,32 @@
+.about-container{
+    text-align: center;
+}
+.about{
+    background-size: cover;
+    background-position: center;
+    background-image:
+    radial-gradient(136.03% 48.57% at 98% 55.04%, rgba(255,255,255,0) -18%, rgba(0,0,0,0) 28.63%, #080A0B 99.74%),
+        url(../images/bg-1x.jpg);
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: 
+        radial-gradient(136.03% 48.57% at 98% 55.04%, rgba(255,255,255,0) -18%, rgba(0,0,0,0) 28.63%, #080A0B 99.74%),
+          url(../images/bg-2x.jpg);
+      }
+    height: 100vh;
+    background-color: greenyellow;
+    padding: 130px 0;
+    &__title{
+        font-family: var(--accent-font);
+        max-width: 270px;
+    }
+    &__text{
+        max-width: 300px;
+    }
+    &__link{
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid tomato;
+        border-radius: 50px;
+    }
+}

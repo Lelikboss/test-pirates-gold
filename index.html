@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One-armed bandit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <!-- Mobile btn -->
+        <button class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu-icon">
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-lines-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/sprite.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- Burger menu-->
+
+    <div class="mobile-menu" data-menu>
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">Испытать судьбу</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="./portfolio.html"
+            >Летопись об игре</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">Связь с нами</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section class="section hero">
+        <div class="container hero-container">
+          <h1 class="hero__title">Получи сундук мертвеца в свои руки!!!</h1>
+          <picture class="hero__picture">
+              <source srcset="./images/gold.png 1x, ./images/gold.png 2x">
+              <img class="hero__picture--position" src="./images/gold.png" alt="Сундук с золотом" width="150">
+          </picture>
+          <p class="hero__text">
+            Нажми на кнопку ниже чтобы проверить твою удачу
+          </p>
+          <a href="" class="hero__link link">Испытать судьбу</a>
+        </div>
+      </section>
+      <section class="section about">
+        <div class="container about-container">
+          <h2 class="about__title">
+            Увлекательней будет если прочтешь историю
+          </h2>
+          <p class="about__text">
+            Переди по ссылке чтобы узнать как можно больше
+          </p>
+          <a class="about__link link" href="">История возникновения игры</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <address class="address">
+          <ul class="footer__list list">
+            <li class="footer__item">
+                <a class="footer__link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="images/sprite.svg#icon-phone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                      <use href="images/sprite.svg#icon-location"></use>
+                  </svg>
+                </a>
+              </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                    <use href="images/sprite.svg#icon-instagr"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                  <use href="images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
