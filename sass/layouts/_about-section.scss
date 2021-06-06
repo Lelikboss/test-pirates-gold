@@ -2,6 +2,7 @@
     text-align: center;
 }
 .about{
+    color: yellowgreen;
     background-size: cover;
     background-position: center;
     background-image:
@@ -17,10 +18,15 @@
     background-color: greenyellow;
     padding: 130px 0;
     &__title{
+        margin-left: auto;
+        margin-right: auto;
         font-family: var(--accent-font);
         max-width: 270px;
+        margin-bottom: 200px;
     }
     &__text{
+        margin-left: auto;
+        margin-right: auto;
         max-width: 300px;
     }
     &__link{
@@ -29,4 +35,7 @@
         border: 1px solid tomato;
         border-radius: 50px;
     }
+}
+.icon{
+    fill: yellowgreen;
 }

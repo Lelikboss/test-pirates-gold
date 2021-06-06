@@ -41,14 +41,15 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: #FFFFFF;
+        color: #c1cf00;
+        background: rgba(29, 34, 21, 0.9);
         transition: right 0.5s;
         &.is-open {
             right: 0;
         }
         &__list{
             font-weight: 500;
-            font-size: 14px;
+            font-size: 26px;
             line-height: 1.17;
             letter-spacing: 0.02em;
         }
@@ -65,4 +66,8 @@
 .header__container{
     display: flex;
     align-items: center;
+}
+.icon-menu,
+.icon-close{
+    fill: greenyellow;
 }

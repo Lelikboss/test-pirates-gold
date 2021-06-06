@@ -16,3 +16,16 @@
           menuBtnRef.classList.remove("is-open");
         }
   })
+
+////////////////////////////////////
+  // var arrSuit = ["#monkey", "#bone", "#chest", "&#9824"]	
+
+  // var check = document.getElementById("inp")
+  // var tern = document.getElementsByClassName("tern")
+  // var allside = document.getElementsByClassName("allside")
+
+  // check.addEventListener("click", function(){
+  // }
+
+  // let array = ["#monkey", "#bone", "#box"]
+
