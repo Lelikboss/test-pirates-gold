@@ -43,5 +43,26 @@
         border: 1px dashed goldenrod;
         border-radius: 50px;
         padding: 15px 15px;
+
+        animation: hero-btn 1500ms ease-in-out;
+        animation-iteration-count: infinite;
+        margin-bottom: 30px;
+    }
+    &__link--bottom{
+        color: goldenrod;
+        border: 1px dashed rgba(255, 217, 0, 0.63);
+        border-radius: 15px;
+        padding: 5px 15px;
+    }
+}
+
+@keyframes hero-btn{
+    0%{
+        border: 2px dashed gold;
+        box-shadow: inset 0 0 15px rgba(216, 142, 6, 0.803);
+    }
+    100%{
+        border: 2px dashed greenyellow;
+        box-shadow: inset 0 0 15px rgba(52, 44, 29, 0.80319);
     }
 }

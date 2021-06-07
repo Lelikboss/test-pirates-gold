@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/index.min.css" />
   </head>
   <body>
+    <!---  ХЕДЕР начало -->
     <header class="header">
       <div class="container header__container">
         <!-- Mobile btn -->
@@ -39,15 +40,18 @@
           <a class="link mobile-menu__link" href="./game-platform.html">Испытать судьбу</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="link mobile-menu__link" href="./portfolio.html"
+          <a class="link mobile-menu__link" href="./about.html"
             >Летопись об игре</a
           >
         </li>
         <li class="mobile-menu__item">
-          <a class="link mobile-menu__link" href="#">Связь с нами</a>
+          <a class="link mobile-menu__link" href="#footer">Связь с нами</a>
         </li>
       </ul>
     </div>
+    <!---  ХЕДЕР конец -->
+
+    <!---  КОНТЕНТ начало -->
     <main>
       <section class="section hero">
         <div class="container hero-container">
@@ -61,8 +65,9 @@
           </p>
           <a href="./game-platform.html" class="hero__link link">Испытать судьбу</a>
         </div>
+        <a class="link hero__link--bottom" href="#about">Ниже</a>
       </section>
-      <section class="section about">
+      <section id="about" class="section about">
         <div class="container about-container">
           <h2 class="about__title">
             Увлекательней будет если прочтешь историю
@@ -74,7 +79,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!---  КОНТЕНТ конец -->
+
+    <!---  ФУТЕР начало -->
+    <footer id="footer" class="footer">
       <div class="container footer__container">
         <address class="address">
           <ul class="footer__list list">
@@ -110,6 +118,7 @@
         </address>
       </div>
     </footer>
+    <!---  ФУТЕР конец -->
 
     <script src="js/index.js"></script>
   </body>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/index.min.css" />
 </head>
 <body>
+  <!--- Хедер начало -->
     <header class="header">
         <div class="container header__container">
           <!-- Mobile btn -->
@@ -32,14 +33,13 @@
         </div>
       </header>
       <!-- Burger menu-->
-  
       <div class="mobile-menu" data-menu>
         <ul class="list mobile-menu__list">
           <li class="mobile-menu__item">
             <a class="link mobile-menu__link" href="./index.html">В начало</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="link mobile-menu__link" href=""
+            <a class="link mobile-menu__link" href="./about.html"
               >Летопись об игре</a
             >
           </li>
@@ -48,6 +48,9 @@
           </li>
         </ul>
       </div>
+      <!--- Хедер конец -->
+
+      <!-- КОНТЕНТ начало-->
       <main>
           <section class="section platform-section">
               <div class="container platform">
@@ -69,9 +72,56 @@
                     </div>
                 </div>
               </div>
+              <button onclick="multi" id="btn" class="btn">Нажми сюда</button>
+              <ul class="balance list">
+                <li  class="balance__text">Счет:</li>
+                <li id="result" class="balance__result"></li>
+                <li id="balance" class="balance__money">$</li>
+              </ul>
           </section>
       </main>
+      <!-- КОНТЕНТ конец -->
 
+      <!---  ФУТЕР начало -->
+      <footer id="footer" class="footer footer--platform">
+        <div class="container footer__container">
+          <address class="address">
+            <ul class="footer__list list">
+              <li class="footer__item">
+                  <a class="footer__link link" href="">
+                    <svg class="footer__icon" width="20" height="20">
+                      <use class="icon" href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">
+                    <svg class="footer__icon" width="20" height="20">
+                        <use class="icon" href="images/sprite.svg#icon-location"></use>
+                    </svg>
+                  </a>
+                </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                      <use class="icon" href="images/sprite.svg#icon-instagr"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use class="icon" href="images/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </footer>
+       <!---  ФУТЕР конец -->
+
+        <!---  JS -->
       <script src="js/index.js"></script>
 </body>
 </html>

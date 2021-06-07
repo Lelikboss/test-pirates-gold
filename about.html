@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.min.css" />
+</head>
+<body>
+     <!---  ХЕДЕР начало -->
+    <header class="header">
+        <div class="container header__container">
+          <!-- Mobile btn -->
+          <button class="mobile-menu-btn" data-menu-button>
+            <svg class="mobile-menu-icon">
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-lines-menu"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <!-- Burger menu-->
+  
+      <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="./index.html">В начало</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href=""
+              >Летопись об игре</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="link mobile-menu__link" href="#">Связь с нами</a>
+          </li>
+        </ul>
+      </div>
+     <!---  ХЕДЕР конец -->
+
+       <!---  КОНТЕНТ начало -->
+
+        <!---  КОНТЕНТ конец -->
+        
+ <!---  ФУТЕР начало -->
+      <footer id="footer" class="footer footer--platform">
+        <div class="container footer__container">
+          <address class="address">
+            <ul class="footer__list list">
+              <li class="footer__item">
+                  <a class="footer__link link" href="">
+                    <svg class="footer__icon" width="20" height="20">
+                      <use class="icon" href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="">
+                    <svg class="footer__icon" width="20" height="20">
+                        <use class="icon" href="images/sprite.svg#icon-location"></use>
+                    </svg>
+                  </a>
+                </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                      <use class="icon" href="images/sprite.svg#icon-instagr"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use class="icon" href="images/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </footer>
+       <!---  ФУТЕР конец -->
+      <script src="js/index.js"></script>
+</body>
+</html>

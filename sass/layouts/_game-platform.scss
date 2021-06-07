@@ -1,77 +1,146 @@
-.platform-section{
-    height: 100vh;
-    padding: 90px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:
-    radial-gradient(145.03% 31.57% at 15% 42.04%, rgba(255,255,255,0) -18%, rgba(0,0,0,0) 28.63%, #080A0B 99.74%),
-        url(../images/game-bg1x.jpg);
-    
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: 
-        radial-gradient(145.03% 31.57% at 15% 42.04%, rgba(255,255,255,0) -18%, rgba(0,0,0,0) 28.63%, #080A0B 99.74%),
-          url(../images/game-bg2x.jpg);
-      }
+.platform-section {
+  text-align: center;
+  height: 100vh;
+  padding: 90px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(
+      145.03% 31.57% at 15% 42.04%,
+      rgba(255, 255, 255, 0) -18%,
+      rgba(0, 0, 0, 0) 28.63%,
+      #080a0b 99.74%
+    ),
+    url(../images/game-bg1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: radial-gradient(
+        145.03% 31.57% at 15% 42.04%,
+        rgba(255, 255, 255, 0) -18%,
+        rgba(0, 0, 0, 0) 28.63%,
+        #080a0b 99.74%
+      ),
+      url(../images/game-bg2x.jpg);
+  }
 }
-.platform{
-    border: 1px solid green;
+.platform {
+  border: 1px solid green;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  animation: platform 1500ms alternate;
+  animation-iteration-count: infinite;
+  &--wrapper {
+    background-color: yellowgreen;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: inherit;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    opacity: 0.8;
+  }
+}
+
+.sirce {
+  text-align: center;
+  display: inline-block;
+  width: calc(100% / 3);
+
+  transform: translateY(-25px);
+}
+.one:hover {
+  transform: translateY(45px);
+}
+#monkey {
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 50%);
+  transform: rotateX(-40deg);
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 15px;
+}
+#bone {
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 15px;
+}
+#box {
+  box-shadow: 0px -14px 14px rgba(0, 0, 0, 50%);
+  transform: rotateX(-40deg);
+  margin: 0 auto;
+  border: 1px solid red;
+  margin-bottom: 15px;
+}
+.sircle .item {
+  transform: translateY(0);
+}
+.one .item {
+  transform: translateY(10);
+}
+.btn {
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: rgba(26, 26, 9, 0.562);
+  color: rgb(166, 255, 0);
+  font-weight: bold;
+
+  cursor: pointer;
+
+  animation: btn 1500ms ease-in-out;
+  animation-iteration-count: infinite;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__text {
+      border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(60, 220, 20);
+    background-color: rgba(11, 51, 184, 0.5);
+    padding: 5px;
+  }
+  &__money {
     padding: 10px;
-    &--wrapper{
-        background-color: yellowgreen;
-        overflow: hidden;
-        border: 1px solid black;
-        width: 100%;
-        height: 130px;
-        display: flex;
-        opacity: 0.8;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 0, 0.5);
+    min-width: 50px;
+  }
+  &__result{
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 0, 0.5);
+    min-width: 50px;
+  }
+}
+
+
+
+@keyframes platform {
+    0%{
+        background-color: lightcoral;
     }
-    // &__rotate{
-    //     border: 1px solid red;
-    //     flex-basis: calc(100% / 3);
-    //     height: 100%;
-    // }
-    // &__rotate-item{
-    //     background-color: yellow;
-    //     border: 1px solid black;
-    //     width: 100%;
-    //     height: calc(100% / 3);
-    // }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: brown;
+    }
 }
-.sirce{
-    text-align: center;
-    display: inline-block;
-    width: calc(100% / 3);
 
-    transform: translateY(-25px);
+@keyframes btn {
+    0%{
+        border: 2px solid greenyellow;
+        box-shadow: inset 0px 0px 15px rgb(221, 134, 4);
+    }
+    100%{
+        border: 2px solid rgb(221, 134, 4);
+    }
 }
-.one:hover{
-    transform: translateY(45px);
-}
-#monkey{
-        margin: 0 auto;
-    border: 1px solid red;
-    margin-bottom: 15px;
-}
-#bone{
-        margin: 0 auto;
-    border: 1px solid red;
-    margin-bottom: 15px;
-
-}
-#box{
-        margin: 0 auto;
-    border: 1px solid red;
-    margin-bottom: 15px;
-}
-.sircle .item{
-    transform: translateY(0);
-}
-.one .item{
-    transform: translateY(10);
-}
-// .sirce:hover .item{
-
-// }
-// .one{
-
-// }
