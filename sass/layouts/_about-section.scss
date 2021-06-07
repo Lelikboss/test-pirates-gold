@@ -16,7 +16,7 @@
       }
     height: 100vh;
     background-color: greenyellow;
-    padding: 130px 0;
+    padding: 45px 0;
     &__title{
         margin-left: auto;
         margin-right: auto;
@@ -37,6 +37,14 @@
 
         animation: about 1500ms ease-in-out;
         animation-iteration-count: infinite;
+    }
+    &__link--top{
+        display: inline-block;
+        margin-bottom: 60px;
+        color: goldenrod;
+        border: 1px dashed rgba(255, 217, 0, 0.63);
+        border-radius: 15px;
+        padding: 5px 15px;
     }
 }
 .icon{

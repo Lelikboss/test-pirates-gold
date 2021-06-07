@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -12,87 +12,114 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/index.min.css" />
-</head>
-<body>
-     <!---  ХЕДЕР начало -->
+  </head>
+  <body>
+    <!---  ХЕДЕР начало -->
     <header class="header">
-        <div class="container header__container">
-          <!-- Mobile btn -->
-          <button class="mobile-menu-btn" data-menu-button>
-            <svg class="mobile-menu-icon">
-              <use
-                class="icon-menu"
-                href="./images/sprite.svg#icon-lines-menu"
-              ></use>
-              <use
-                class="icon-close"
-                href="./images/sprite.svg#icon-close-menu"
-              ></use>
-            </svg>
-          </button>
-        </div>
-      </header>
-      <!-- Burger menu-->
-  
-      <div class="mobile-menu" data-menu>
-        <ul class="list mobile-menu__list">
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__link" href="./index.html">В начало</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__link" href=""
-              >Летопись об игре</a
-            >
-          </li>
-          <li class="mobile-menu__item">
-            <a class="link mobile-menu__link" href="#">Связь с нами</a>
-          </li>
-        </ul>
+      <div class="container header__container">
+        <!-- Mobile btn -->
+        <button class="mobile-menu-btn" data-menu-button>
+          <svg class="mobile-menu-icon">
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-lines-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/sprite.svg#icon-close-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
-     <!---  ХЕДЕР конец -->
+    </header>
+    <!-- Burger menu-->
 
-       <!---  КОНТЕНТ начало -->
+    <div class="mobile-menu" data-menu>
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="./index.html">В начало</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="">Летопись об игре</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="link mobile-menu__link" href="#">Связь с нами</a>
+        </li>
+      </ul>
+    </div>
+    <!---  ХЕДЕР конец -->
 
-        <!---  КОНТЕНТ конец -->
-        
- <!---  ФУТЕР начало -->
-      <footer id="footer" class="footer footer--platform">
-        <div class="container footer__container">
-          <address class="address">
-            <ul class="footer__list list">
-              <li class="footer__item">
-                  <a class="footer__link link" href="">
-                    <svg class="footer__icon" width="20" height="20">
-                      <use class="icon" href="images/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="">
-                    <svg class="footer__icon" width="20" height="20">
-                        <use class="icon" href="images/sprite.svg#icon-location"></use>
-                    </svg>
-                  </a>
-                </li>
-              <li class="footer__item">
-                <a class="footer__link" href="">
-                  <svg class="footer__icon" width="20" height="20">
-                      <use class="icon" href="images/sprite.svg#icon-instagr"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link link" href="">
-                  <svg class="footer__icon" width="20" height="20">
-                    <use class="icon" href="images/sprite.svg#icon-telegram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </address>
+    <!---  КОНТЕНТ начало -->
+    <main>
+      <section id="about-page" class="section about-page">
+        <div class="container about-page-container">
+          <h2 class="about-page__title">История возникновенния</h2>
+          <p class="about-page__text">
+            Случайно узнав о месте хранения несметных сокровищ ацтеков, археолог
+            и исследователь Томас Пэлгрейв набирает команду смельчаков. Для
+            одних это путешествие представляет научный и духовный интерес,
+            другими движет неутолимая жажда золота. Но на пути к сокровищнице их
+            подстерегает множество опасностей и ловушек.
+          </p>
+          <p>
+            А тебе нужно всего лишь сделать ставку и нажать на кнопку. И в
+            случае выиграша ты получишь приз
+          </p>
+          <p class="about-page__text">
+            Нажми на кнопку ниже чтобы проверить твою удачу
+          </p>
+          <a href="./game-platform.html" class="hero__link link"
+            >Испытать судьбу</a
+          >
         </div>
-      </footer>
-       <!---  ФУТЕР конец -->
-      <script src="js/index.js"></script>
-</body>
+      </section>
+    </main>
+    <!---  КОНТЕНТ конец -->
+
+    <!---  ФУТЕР начало -->
+    <footer id="footer" class="footer footer--platform">
+      <div class="container footer__container">
+        <address class="address">
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a class="footer__link link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                  <use class="icon" href="images/sprite.svg#icon-phone"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                  <use
+                    class="icon"
+                    href="images/sprite.svg#icon-location"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                  <use class="icon" href="images/sprite.svg#icon-instagr"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link link" href="">
+                <svg class="footer__icon" width="20" height="20">
+                  <use
+                    class="icon"
+                    href="images/sprite.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+    <!---  ФУТЕР конец -->
+    <script src="js/index.js"></script>
+  </body>
 </html>

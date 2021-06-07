@@ -248,7 +248,7 @@ img {
   background-image: radial-gradient(136.03% 48.57% at 98% 55.04%, rgba(255, 255, 255, 0) -18%, rgba(0, 0, 0, 0) 28.63%, #080A0B 99.74%), url(../images/bg-1x.jpg);
   height: 100vh;
   background-color: greenyellow;
-  padding: 130px 0;
+  padding: 45px 0;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -278,6 +278,15 @@ img {
   border-radius: 50px;
   animation: about 1500ms ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.about__link--top {
+  display: inline-block;
+  margin-bottom: 60px;
+  color: goldenrod;
+  border: 1px dashed rgba(255, 217, 0, 0.63);
+  border-radius: 15px;
+  padding: 5px 15px;
 }
 
 .icon {
@@ -351,7 +360,7 @@ img {
   border: 1px solid black;
   border-radius: inherit;
   width: 100%;
-  height: 130px;
+  height: 50px;
   display: flex;
   opacity: 0.8;
 }
@@ -360,7 +369,6 @@ img {
   text-align: center;
   display: inline-block;
   width: calc(100% / 3);
-  transform: translateY(-25px);
 }
 
 .one:hover {
@@ -368,25 +376,21 @@ img {
 }
 
 #monkey {
-  box-shadow: 0px 14px 14px black;
-  transform: rotateX(-40deg);
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 #bone {
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 #box {
-  box-shadow: 0px -14px 14px black;
-  transform: rotateX(-40deg);
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .sircle .item {
@@ -395,6 +399,83 @@ img {
 
 .one .item {
   transform: translateY(10);
+}
+
+.one {
+  animation: one 250ms linear;
+  animation-iteration-count: infinite;
+}
+
+.platform:hover .sirce {
+  animation-play-state: paused;
+}
+
+@keyframes one {
+  0% {
+    transform: translateY(-226px);
+  }
+  25% {
+    transform: translateY(-176px);
+  }
+  50% {
+    transform: translateY(-87px);
+  }
+  75% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(58px);
+  }
+}
+
+.two {
+  animation: two 250ms linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes two {
+  0% {
+    transform: translateY(-87px);
+  }
+  25% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(58px);
+  }
+  75% {
+    transform: translateY(-226px);
+  }
+  100% {
+    transform: translateY(-176px);
+  }
+}
+
+.three {
+  animation: three 250ms linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes three {
+  0% {
+    transform: translateY(8px);
+  }
+  25% {
+    transform: translateY(-58px);
+  }
+  50% {
+    transform: translateY(-226px);
+  }
+  75% {
+    transform: translateY(-176px);
+  }
+  100% {
+    transform: translateY(-87px);
+  }
+}
+
+.btn:hover .sirce {
+  animation-play-state: paused;
 }
 
 .btn {
@@ -461,5 +542,23 @@ img {
   100% {
     border: 2px solid #dd8604;
   }
+}
+
+.about-page {
+  background-color: #7c5d3e;
+  padding: 50px 0;
+  height: 100vh;
+}
+
+.about-page__title {
+  margin-bottom: 50px;
+}
+
+.about-page__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 300px;
 }
 /*# sourceMappingURL=index.css.map */

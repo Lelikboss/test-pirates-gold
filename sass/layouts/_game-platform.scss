@@ -38,7 +38,7 @@
     border: 1px solid black;
     border-radius: inherit;
     width: 100%;
-    height: 130px;
+    height: 50px;
     display: flex;
     opacity: 0.8;
   }
@@ -49,35 +49,104 @@
   display: inline-block;
   width: calc(100% / 3);
 
-  transform: translateY(-25px);
 }
 .one:hover {
   transform: translateY(45px);
 }
 #monkey {
-  box-shadow: 0px 14px 14px rgba(0, 0, 0, 50%);
-  transform: rotateX(-40deg);
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 #bone {
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 #box {
-  box-shadow: 0px -14px 14px rgba(0, 0, 0, 50%);
-  transform: rotateX(-40deg);
   margin: 0 auto;
   border: 1px solid red;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 .sircle .item {
   transform: translateY(0);
 }
 .one .item {
   transform: translateY(10);
+}
+.one{
+  // transform: translateY(-226px);;
+  animation: one 250ms linear;
+  animation-iteration-count: infinite;
+}
+.platform:hover .sirce{
+  animation-play-state: paused;
+}
+
+@keyframes one{
+  0%{
+        transform: translateY(-226px);
+  }
+  25%{
+        transform: translateY(-176px);
+  }
+  50%{
+        transform: translateY(-87px);
+  }
+  75%{
+    transform: translateY(8px);
+  }
+  100%{
+    transform: translateY(58px);
+  }
+}
+
+.two{
+  // transform: translateY(-226px);;
+  animation: two 250ms linear;
+  animation-iteration-count: infinite;
+}
+@keyframes two{
+  0%{
+        transform: translateY(-87px);
+  }
+  25%{
+        transform: translateY(8px);
+  }
+  50%{
+        transform: translateY(58px);
+  }
+  75%{
+    transform: translateY(-226px);
+  }
+  100%{
+    transform: translateY(-176px);
+  }
+}
+.three{
+  // transform: translateY(-226px);;
+  animation: three 250ms linear;
+  animation-iteration-count: infinite;
+}
+@keyframes three{
+  0%{
+        transform: translateY(8px);
+  }
+  25%{
+        transform: translateY(-58px);
+  }
+  50%{
+        transform: translateY(-226px);
+  }
+  75%{
+    transform: translateY(-176px);
+  }
+  100%{
+    transform: translateY(-87px);
+  }
+}
+.btn:hover .sirce{
+  animation-play-state: paused;
 }
 .btn {
   margin-bottom: 10px;
